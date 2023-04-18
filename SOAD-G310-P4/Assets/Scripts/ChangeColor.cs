@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeColor-Wings-1 : MonoBehaviour
+public class ChangeColor : MonoBehaviour
 {
-    public SpriteRenderer Wing-1;
+    public SpriteRenderer Wing1;
     void Start()
     {
-       Wing-1 = GetComponent<SpriteRenderer>();
+       Wing1 = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class ChangeColor-Wings-1 : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Wing-1.color = Random.ColorHSV();
+        Wing1.color = Random.ColorHSV();
         print("Changed");
     }
 }
