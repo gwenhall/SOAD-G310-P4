@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeColor : MonoBehaviour
+public class ChangeColor-Wings-1 : MonoBehaviour
 {
-    public SpriteRenderer Creecher;
+    public SpriteRenderer Wing-1;
     void Start()
     {
-       Creecher = GetComponent<SpriteRenderer>();
+       Wing-1 = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class ChangeColor : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Creecher.color = Random.ColorHSV();
+        Wing-1.color = Random.ColorHSV();
         print("Changed");
     }
 }
