@@ -248,8 +248,10 @@ GameObject:
   m_Component:
   - component: {fileID: 212690268}
   - component: {fileID: 212690269}
+  - component: {fileID: 212690271}
+  - component: {fileID: 212690270}
   m_Layer: 0
-  m_Name: Wing-2
+  m_Name: Wing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,7 +265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212690267}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 1713038460}
@@ -320,6 +322,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &212690270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212690267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72543c92768f9e64db30cf847f96ffb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wing2: {fileID: 212690269}
+--- !u!61 &212690271
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212690267}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 29.39, y: 29.6506}
+    newSize: {x: 29.39, y: 29.6506}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 29.39, y: 29.6506}
+  m_EdgeRadius: 0
 --- !u!1 &222178193
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +372,7 @@ GameObject:
   - component: {fileID: 222178194}
   - component: {fileID: 222178195}
   m_Layer: 0
-  m_Name: Eyes-3
+  m_Name: Eyes3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,8 +453,10 @@ GameObject:
   m_Component:
   - component: {fileID: 329714290}
   - component: {fileID: 329714291}
+  - component: {fileID: 329714293}
+  - component: {fileID: 329714292}
   m_Layer: 0
-  m_Name: Wing-3
+  m_Name: Wing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,7 +470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329714289}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 1713038460}
@@ -484,6 +527,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &329714292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329714289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2519fc2a1a12b84985f26ea72fec24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wing3: {fileID: 329714291}
+--- !u!61 &329714293
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329714289}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 29.39, y: 29.6506}
+    newSize: {x: 29.39, y: 29.6506}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 29.39, y: 29.6506}
+  m_EdgeRadius: 0
 --- !u!1 &354803670
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +660,7 @@ GameObject:
   - component: {fileID: 361300005}
   - component: {fileID: 361300006}
   m_Layer: 0
-  m_Name: Eyes-1
+  m_Name: Eyes1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -659,8 +741,10 @@ GameObject:
   m_Component:
   - component: {fileID: 652101807}
   - component: {fileID: 652101808}
+  - component: {fileID: 652101810}
+  - component: {fileID: 652101809}
   m_Layer: 15
-  m_Name: Wing-1
+  m_Name: Wing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,6 +815,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &652101809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652101806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751d5e584b73924a84fb53c5b1313cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wing1: {fileID: 652101808}
+--- !u!61 &652101810
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652101806}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 29.39, y: 29.6506}
+    newSize: {x: 29.39, y: 29.6506}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 29.39, y: 29.6506}
+  m_EdgeRadius: 0
 --- !u!1 &929375829
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +978,7 @@ GameObject:
   - component: {fileID: 1166917879}
   - component: {fileID: 1166917880}
   m_Layer: 0
-  m_Name: Eyes-2
+  m_Name: Eyes2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -937,7 +1060,7 @@ GameObject:
   - component: {fileID: 1213061586}
   - component: {fileID: 1213061587}
   m_Layer: 0
-  m_Name: Horn-3
+  m_Name: Horn3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1085,7 +1208,7 @@ GameObject:
   - component: {fileID: 1415836940}
   - component: {fileID: 1415836941}
   m_Layer: 0
-  m_Name: Horn-2
+  m_Name: Horn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1167,7 +1290,7 @@ GameObject:
   - component: {fileID: 1462783880}
   - component: {fileID: 1462783879}
   m_Layer: 0
-  m_Name: Antennae-1
+  m_Name: Antennae
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1315,7 +1438,7 @@ GameObject:
   - component: {fileID: 1997176323}
   - component: {fileID: 1997176324}
   m_Layer: 0
-  m_Name: Horn-1
+  m_Name: Horn1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

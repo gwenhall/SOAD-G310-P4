@@ -7,7 +7,7 @@ public class ChangeColor : MonoBehaviour
     public SpriteRenderer Creecher;
     void Start()
     {
-        Creecher = GetComponent<SpriteRenderer>();
+       Creecher = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
