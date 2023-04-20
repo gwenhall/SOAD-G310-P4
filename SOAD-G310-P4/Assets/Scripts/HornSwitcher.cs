@@ -1,23 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
-public class HornSwitcher : MonoBehaviour
-{
+public class Drag : MonoBehaviour {
+  private bool dragging = false;
+  private Vector3 offset;
 
-    public Sprite[] horns;
-
-    SpriteRenderer spriteRenderer;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       spriteRenderer = GetComponent<SpriteRenderer>();
+  // Update is called once per frame
+  void Update() {
+    if (dragging) {
+      // Move object, taking into account original offset.
+      transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
     }
+  }
 
-   public void SwitchToSprite(int index)
-   {
-          spriteRenderer.sprite = horns[index + 1];
-   }
+  private void OnMouseDown() {
+    // Record the difference between the objects centre, and the clicked point on the camera plane.
+    offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    dragging = true;
+  }
+
+  private void OnMouseUp() {
+    // Stop dragging.
+    dragging = false;
+  }
 }
+
